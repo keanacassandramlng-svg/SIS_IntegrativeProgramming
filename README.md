@@ -63,7 +63,7 @@ class Program
             {
                 if (!hasApplied)
                 {
-                    Console.WriteLine("No application found.");
+                    Console.WriteLine("The user haven't applied yet. Please return to the application section.");
                 }
                 else
                 {
