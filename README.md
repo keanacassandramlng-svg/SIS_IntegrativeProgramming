@@ -17,13 +17,14 @@ class Program
         while (true)
         {
             Console.WriteLine("\n===== STUDENT INFORMATION SYSTEM =====");
-            Console.WriteLine("1. Apply");
-            Console.WriteLine("2. Enroll");
-            Console.WriteLine("3. Deactivate");
-            Console.WriteLine("4. Graduate");
+            Console.WriteLine("1. School Application.");
+            Console.WriteLine("2. Enrollment");
+            Console.WriteLine("3. Deactivation of Student Account.");
+            Console.WriteLine("4. About Graduation.");
             Console.WriteLine("5. Leave of Absence.");
-            Console.WriteLine("6. Show Student Info.");
-            Console.WriteLine("7. Exit");
+            Console.WriteLine("6. Show Student Information.");
+            Console.WriteLine("7. List of School Rules.");
+            Console.WriteLine("8. Exit");
             Console.Write("Choose: ");
 
             string choice = Console.ReadLine();
@@ -152,8 +153,22 @@ class Program
                 }
             }
 
+           else if (choice == "7")
+            {
+                if (!hasApplied)
+                {
+                    Console.WriteLine("No student record found.");
+                }
+                else
+                {
+                    Console.WriteLine("\n===== LIST OF SCHOOL RULES =====");
+                    Console.WriteLine("1. 3 absences in a subject results in drop out.");
+                    Console.WriteLine("2. Any form of academic cheating results in expulsion.");
+                    Console.WriteLine("3. The student must wear appropriate attire at all times.");
+                }
+            }
             
-            else if (choice == "7")
+            else if (choice == "8")
             {
                 Console.WriteLine("Exiting program...");
                 break;
