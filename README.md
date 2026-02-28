@@ -21,8 +21,8 @@ class Program
             Console.WriteLine("2. Enroll");
             Console.WriteLine("3. Deactivate");
             Console.WriteLine("4. Graduate");
-            Console.WriteLine("5. Leave of Absence");
-            Console.WriteLine("6. Show Student Info");
+            Console.WriteLine("5. Leave of Absence.");
+            Console.WriteLine("6. Show Student Info.");
             Console.WriteLine("7. Exit");
             Console.Write("Choose: ");
 
@@ -49,7 +49,7 @@ class Program
                 Console.Write("Enter Contact Number: ");
                 contact = Console.ReadLine();
 
-                studentNumber = "2024-00104-BM-0";
+                studentNumber = "2024-12345-BN-0";
                 status = "Applicant";
                 hasApplied = true;
 
